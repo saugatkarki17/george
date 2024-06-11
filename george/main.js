@@ -1,5 +1,5 @@
 console.log("hi");
-console.log("hello)
+
 
 const navScroll = document.getElementById('nav-div');
 window.onscroll = function () { 
