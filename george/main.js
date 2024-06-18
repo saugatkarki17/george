@@ -1,5 +1,4 @@
-console.log("hi");
-
+console.log("hi")
 
 const navScroll = document.getElementById('nav-div');
 window.onscroll = function () { 
@@ -50,7 +49,7 @@ function showModal(projectId) {
         'project1': {
             title: 'Residential Project 1',
             description: 'This is a detailed description of Residential Project 1.',
-            images: ['project1-1.jpg', 'project1-2.jpg', 'project1-3.jpg']
+            images: ['./images/background-main.jpg', './images/background-main.jpg', './images/background-main.jpg']
         },
         'project2': {
             title: 'Residential Project 2',
@@ -94,3 +93,41 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+// review
+
+
+let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+let slideInterval = setInterval(nextSlide, 7000);
+let navDots = document.querySelectorAll('.nav-dot');
+
+function nextSlide() {
+    currentSlide = (currentSlide + 2) % slides.length;
+    updateSlider();
+}
+
+function goToSlide(n) {
+    currentSlide = (n * 2) % slides.length;
+    updateSlider();
+}
+
+function updateSlider() {
+    document.querySelector('.slider').style.transform = `translateX(-${currentSlide * 25}%)`;
+    navDots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide / 2);
+    })
+}
+
+navDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        clearInterval(slideInterval);
+        goToSlide(index);
+        slideInterval = setInterval(nextSlide, 7000);
+    });
+});
+
+updateSlider();
+
+
