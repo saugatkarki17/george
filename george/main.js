@@ -47,9 +47,9 @@ function showModal(projectId) {
     
     const projectDetails = {
         'project1': {
-            title: 'Residential Project 1',
-            description: 'This is a detailed description of Residential Project 1.',
-            images: ['./images/background-main.jpg', './images/background-main.jpg', './images/background-main.jpg']
+            title: 'Woodland Park, NJ',
+            description: 'Build a pool from scratch, installed lighting, and a modernized aesthetic.',
+            images: ['./images/IMG_3825.jpeg', './images/IMG_3898.jpeg', './images/IMG_3899.jpeg']
         },
         'project2': {
             title: 'Residential Project 2',
@@ -98,36 +98,54 @@ window.onclick = function(event) {
 // review
 
 
-let slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
-let slideInterval = setInterval(nextSlide, 7000);
-let navDots = document.querySelectorAll('.nav-dot');
+
+const testimonials = [
+    {
+        image: "https://via.placeholder.com/150",
+        text: "The construction team was professional, reliable, and efficient. They transformed our backyard into a beautiful outdoor living space with a custom-built pool and deck. Highly recommend their services!",
+        name: "Fady Gazel",
+        role: "Homeowner"
+    },
+    {
+        image: "https://via.placeholder.com/150",
+        text: "We hired them for a complete home renovation, and they exceeded our expectations. The project was completed on time and within budget, with top-notch craftsmanship. Every detail was perfect!",
+        name: "Saugat Karki",
+        role: "Interior Designer"
+    },
+    {
+        image: "https://via.placeholder.com/150",
+        text: "Their attention to detail and ability to communicate throughout the project was outstanding. Our new office building is both functional and visually stunning. A job well done!",
+        name: "Chady Dirany",
+        role: "Business Owner"
+    }
+];
+
+function updateSlide() {
+    const testimonialContent = document.querySelector(".testimonial-content");
+    const { image, text, name, role } = testimonials[currentSlide];
+    testimonialContent.innerHTML = `
+        <img src="${image}" alt="${name}" class="testimonial-image">
+        <div class="testimonial-text">
+            <p>"${text}"</p>
+            <h3>${name}</h3>
+            <p>${role}</p>
+        </div>
+    `;
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + testimonials.length) % testimonials.length;
+    updateSlide();
+}
 
 function nextSlide() {
-    currentSlide = (currentSlide + 2) % slides.length;
-    updateSlider();
+    currentSlide = (currentSlide + 1) % testimonials.length;
+    updateSlide();
 }
 
-function goToSlide(n) {
-    currentSlide = (n * 2) % slides.length;
-    updateSlider();
-}
+// Initialize the first slide
+updateSlide();
 
-function updateSlider() {
-    document.querySelector('.slider').style.transform = `translateX(-${currentSlide * 25}%)`;
-    navDots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentSlide / 2);
-    })
-}
-
-navDots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        clearInterval(slideInterval);
-        goToSlide(index);
-        slideInterval = setInterval(nextSlide, 7000);
-    });
-});
-
-updateSlider();
 
 

@@ -6,6 +6,11 @@
     <title>Gt realty</title>
     <script src="https://kit.fontawesome.com/276489fb38.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -17,53 +22,43 @@
 </head>
 <body>
 
-<div class="main-background">
-    <!-- navigation -->
-    <div class="nav-div" id="nav-div">
-        <nav>
-            
-                <div class="logo-div">
-                    <h1 class="logo">Gt realty</h1>
-                </div>
 
-                <div class="nav-icons">
-                    <ul class="nav-links">
-                        <li class="nav-link-li"><a href="#main-div" class="-nav-links-a">Home</a></li>
-                        <li class="nav-link-li"><a href="#main-div" class="-nav-links-a">About us</a></li>
-                        <li class="nav-link-li"><a href="#main-div" class="-nav-links-a">Works</a></li>
-                        <li class="nav-link-li"><a href="#main-div" class="-nav-links-a">Contact</a></li>
-                    </ul>
-                </div>
-            
-        </nav>
-    </div>
+    
     <!-- landing-div -->
-     <div class="main-div">
+    <!-- navigation -->
 
-        <div class="main-div-in-01">
+    <div class="main-div">
 
-            <div class="main-div-01">
-                <h1 class="main-div-01-h1">Build Your Dream With Us</h1>
+        <nav>
+            <div class="logo-div"></div>
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="#scroll-project" >Projects</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <a href="" class="btn-nav">Contact</a>
+        </nav>
+
+        <!-- bottom div after nav -->
+        
+        <div class="main-landing">
+            <div class="main-landing-l">
+                <h1 class="main-landing-h1">GT Realty: Build Your Dream With Us</h1>
+                <p class="main-landing-p">Give your home or business a face lift with affordable remodeling and restoration services with us.</p>
+                <a href="" class="learn-more-landing">Learn more →</a>
             </div>
 
-            <div class="main-div-02">
-                <h1 class="main-div-01-p1">Build Your Dream With Us Build Your Dream With Us 
-                    Build Your Dream With Us Build Your Dream With Us </h1>
-
-            </div>
-
-            <div class="main-div-03">
-                <div class="main-div-03-01">
-                    <div class="btn-main-div"><a href="" id="btn-main-div-03" class="learn-more-btn">Learn more</a></div>
-                    <div class="btn-main-div" id="btn-con"><a href="" id="btn-main-div-04" class="contact-btn">Contact us</a></div>
-                </div>
-            </div>
+            <div class="main-landing-r"></div>
         </div>
+        
+
+
     </div>
 
 
 
-</div>
+
 
 
 
@@ -77,8 +72,7 @@
         <div class="about-main-01">
 
             <div class="about-main-01-01">
-                <h1 class="about-h1">We’re always asking ourselves what’s possible in 
-                    a world that   a world that  </h1>
+                <h1 class="about-h1">We’re always asking ourselves what’s possible to become better us. </h1>
                 <p class="about-p">At our core, we’re driven by teamwork – it’s fundamental 
                     to who we are. Whether in the office or on the job site, our team is intentional about
                      advancing together towards a common goal. Through collaboration with our clients and 
@@ -96,7 +90,7 @@
                 <div class="main-picture-personal">
                     <div class="picture-george"></div>
                     <div class="coute">
-                        <p class="coute-george">"Keeping coustomers for life is our moto" <br> -George Amir, CEO</p>
+                        <p class="coute-george">" Keeping coustomers happy for life " <br> -George Amir, CEO</p>
                     </div>
                 </div>
             </div>
@@ -108,9 +102,9 @@
     <!-- services -->
 
     
-
+<div class="main-service">
     <div class="benefit-service">
-        <h1 class="service-h1" >Benefits of working with us</h1>
+        <h1 class="service-h1" >We Offer Different Services To Improve Your exclusive deals tailored to meet your needs</h1>
     </div>
 
     <div class="services-container">
@@ -151,15 +145,15 @@
         </div>
     </div>
 
-
+</div>
 
 <!-- projects -->
 
-        <div class="benefit-service">
-            <h1 class="service-h1" style="font-size: 28px;">Recent Projects</h1>
+        <div class="benefit-service" >
+            <h1 class="service-h1" style="font-size: 30px;">Our Recent Projects</h1>
         </div>
 
-        <div class="gallery-container">
+        <div class="gallery-container" id="scroll-project">
             <div class="toggle-buttons">
                 <button class=" active" onclick="showCategory('all')">All</button>
                 <button onclick="showCategory('residential')">Residential</button>
@@ -167,22 +161,31 @@
             </div>
             <div class="projects all residential">
                 <div class="project" onclick="showModal('project1')">
-                    <h2 class="h2-project">Residential Project 1</h2>
-                    <img src="./images/background-main.jpg" alt="Project 1">
+                    <img src="./images/IMG_3825.jpeg" alt="Project 1" style="padding-bottom: 6px;">
+                    <h2 class="h2-project">Woodland Park, NJ</h2>
+
                 </div>
                 <div class="project" onclick="showModal('project2')">
+                    <img src="./images/background-main.jpg" alt="Project 2" style="padding-bottom: 6px;">
                     <h2 class="h2-project">Residential Project 2</h2>
-                    <img src="./images/background-main.jpg" alt="Project 2">
+
                 </div>
             </div>
             <div class="projects all commercial">
                 <div class="project" onclick="showModal('project3')">
+                    <img src="./images/background-main.jpg" alt="Project 3" style="padding-bottom: 6px;">
                     <h2 class="h2-project">Commercial Project 1</h2>
-                    <img src="./images/background-main.jpg" alt="Project 3">
+
                 </div>
                 <div class="project" onclick="showModal('project4')">
+                    <img src="./images/background-main.jpg" alt="Project 4" style="padding-bottom: 6px;">
                     <h2 class="h2-project">Commercial Project 2</h2>
-                    <img src="./images/background-main.jpg" alt="Project 4">
+
+                </div>
+                <div class="project" onclick="showModal('project4')">
+                    <img src="./images/background-main.jpg" alt="Project 4" style="padding-bottom: 6px;">
+                    <h2 class="h2-project">Commercial Project 2</h2>
+
                 </div>
             </div>
         </div>
@@ -200,172 +203,34 @@
 
 
         <!-- review -->
-         <div class="review-div">
-            <section class="testimonials">
-                <h2 style="margin-bottom: 3rem;">Our Customers Say It Best</h2>
-                <div class="slider">
-                    <div class="slide">
-                        <blockquote>
-                            <p>Your information is very complete and very accurate.</p>
-                            <cite>Ron D'Aoust<br>Regional Manager<br>Installed Building Products (IBP)</cite>
-                        </blockquote>
+         <div class="main-test">
+            <div class="testimonial-container">
+                <h1 class="test-h1">What our happy clients say?</h1>
+                <div class="testimonial">
+                    <button class="arrow left-arrow" onclick="prevSlide()">&#8249;</button>
+                    <div class="testimonial-content">
+                        <img src="https://via.placeholder.com/150" alt="Person" class="testimonial-image">
+                        <div class="testimonial-text">
+                            <p>
+                                "Aenean pulvinar dui ornare, feugiat lorem non, ultrices justo. Mauris efficitur, mauris in auctor euismod, quam elit ultrices urna, eget eleifend arcu risus id metus. Maecenas ex enim, mattis eu velit vitae, blandit mattis sapien. Sed aliquam leo et semper vestibulum."
+                            </p>
+                            <h3>Frank Kinney</h3>
+                            <p>Financial Director</p>
+                        </div>
                     </div>
-                    <div class="slide">
-                        <blockquote>
-                            <p>Whenever I need help or service, I can count on an answer from Dodge.</p>
-                            <cite>Field Support Coordinator<br>Epic Metals Corp.</cite>
-                        </blockquote>
-                    </div>
-                    <div class="slide">
-                        <blockquote>
-                            <p>Dodge provides exceptional service and support.</p>
-                            <cite>Jane Doe<br>Project Manager<br>Construction Co.</cite>
-                        </blockquote>
-                    </div>
-                    <div class="slide">
-                        <blockquote>
-                            <p>Highly reliable and always there when you need them.</p>
-                            <cite>John Smith<br>Operations Manager<br>Build It Inc.</cite>
-                        </blockquote>
-                    </div>
+                    <button class="arrow right-arrow" onclick="nextSlide()">&#8250;</button>
                 </div>
-                <div class="navigation">
-                    <span class="nav-dot"></span>
-                    <span class="nav-dot"></span>
-                </div>
-            </section>
+            </div>
+        </div>
         
-         </div>
 
 
 
          <!-- message -->
         <div class="message-div">
             <h1 class="h1-message">Get In Touch</h1>
-            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvnnjye" method="post">
-                <fieldset id="fs-frm-inputs">
-                  <label for="full-name">Full Name</label>
-                  <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-                  <label for="email-address">Email Address</label>
-                  <input type="email" name="_replyto" id="email-address" placeholder="email@gmail.com" required="">
-                  <label for="message">Message</label>
-                  <textarea rows="5" name="message" id="message" placeholder="Enter your message here" required=""></textarea>
-                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                </fieldset>
-                <input type="submit" value="Submit">
-              </form><style>/* reset */
-              #fs-frm input,
-              #fs-frm select,
-              #fs-frm textarea,
-              #fs-frm fieldset,
-              #fs-frm optgroup,
-              #fs-frm label,
-              #fs-frm #card-element:disabled {
-                font-family: inherit;
-                font-size: 100%;
-                color: inherit;
-                border: none;
-                border-radius: 0;
-                display: block;
-                width: 100%;
-                padding: 0;
-                margin: 0;
-                
-              }
-              #fs-frm label,
-              #fs-frm legend,
-              #fs-frm ::placeholder {
-                font-size: .825rem;
-                margin-bottom: .5rem;
-                padding-top: .2rem;
-                display: flex;
-                align-items: baseline;
-              }
+            
               
-              /* border, padding, margin, width */
-              #fs-frm input,
-              #fs-frm select,
-              #fs-frm textarea,
-              #fs-frm #card-element {
-                border: 1px solid rgba(0,0,0,0.2);
-                background-color: rgba(255,255,255,0.9);
-                padding: .75em 1rem;
-                margin-bottom: 1.5rem;
-              }
-              #fs-frm input:focus,
-              #fs-frm select:focus,
-              #fs-frm textarea:focus {
-                background-color: white;
-                outline-style: solid;
-                outline-width: thin;
-                outline-color: gray;
-                outline-offset: -1px;
-              }
-              #fs-frm [type="text"],
-              #fs-frm [type="email"] {
-                width: 100%;
-              }
-              #fs-frm [type="button"],
-              #fs-frm [type="submit"],
-              #fs-frm [type="reset"] {
-                width: auto;
-                cursor: pointer;
-                -webkit-appearance: button;
-                -moz-appearance: button;
-                appearance: button;
-                font-size: 15px;
-                outline: none;
-                border: none;
-                height: 3.6rem;
-                width: 90%;
-                background-color: #ffb717;
-                color: rgb(0, 0, 0);
-              }
-              #fs-frm [type="button"]:focus,
-              #fs-frm [type="submit"]:focus,
-              #fs-frm [type="reset"]:focus {
-                outline: none;
-              }
-              #fs-frm [type="submit"],
-              #fs-frm [type="reset"] {
-                margin-bottom: 0;
-              }
-              #fs-frm select {
-                text-transform: none;
-              }
-              
-              #fs-frm [type="checkbox"] {
-                -webkit-appearance: checkbox;
-                -moz-appearance: checkbox;
-                appearance: checkbox;
-                display: inline-block;
-                width: auto;
-                margin: 0 .5em 0 0 !important;
-              }
-              
-              #fs-frm [type="radio"] {
-                -webkit-appearance: radio;
-                -moz-appearance: radio;
-                appearance: radio;
-              }
-              
-              /* address, locale */
-              #fs-frm fieldset.locale input[name="city"],
-              #fs-frm fieldset.locale select[name="state"],
-              #fs-frm fieldset.locale input[name="postal-code"] {
-                display: inline;
-              }
-              #fs-frm fieldset.locale input[name="city"] {
-                width: 52%;
-              }
-              #fs-frm fieldset.locale select[name="state"],
-              #fs-frm fieldset.locale input[name="postal-code"] {
-                width: 20%;
-              }
-              #fs-frm fieldset.locale input[name="city"],
-              #fs-frm fieldset.locale select[name="state"] {
-                margin-right: 3%;
-              }
               </style>
 
 
