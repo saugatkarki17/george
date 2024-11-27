@@ -1,16 +1,5 @@
-console.log("hi")
 
-const navScroll = document.getElementById('nav-div');
-window.onscroll = function () { 
-    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
-        navScroll.classList.add("nav-colored");
-        navScroll.classList.remove("nav-transparent");
-    } 
-    else {
-        navScroll.classList.add("nav-transparent");
-        navScroll.classList.remove("nav-colored");
-    }
-};
+
 
 
 
@@ -52,19 +41,25 @@ function showModal(projectId) {
             images: ['./images/IMG_3825.jpeg', './images/IMG_3898.jpeg', './images/IMG_3899.jpeg']
         },
         'project2': {
-            title: 'Residential Project 2',
-            description: 'This is a detailed description of Residential Project 2.',
-            images: ['project2-1.jpg', 'project2-2.jpg', 'project2-3.jpg']
+            title: 'Clifton, NJ',
+            description: 'Total Exterior and interior construction and finishing',
+            images: ['./images/c-1.jpeg', './images/c-2.jpeg', './images/c-3.jpg']
         },
         'project3': {
-            title: 'Commercial Project 1',
-            description: 'This is a detailed description of Commercial Project 1.',
-            images: ['project3-1.jpg', 'project3-2.jpg', 'project3-3.jpg']
+            title: 'Woodland Park, NJ',
+            description: 'Total Exterior and interior construction and finishing',
+            images: ['./images/b-3.jpeg', './images/b-1.jpeg', './images/b-2.jpeg']
         },
         'project4': {
-            title: 'Commercial Project 2',
-            description: 'This is a detailed description of Commercial Project 2.',
-            images: ['project4-1.jpg', 'project4-2.jpg', 'project4-3.jpg']
+            title: 'Bloomfield, NJ',
+            description: 'Total Exterior and interior construction and finishing',
+            images: ['./images/d-3.jpg', './images/d-2.jpeg', './images/d-1.jpeg']
+        }
+        ,
+        'project5': {
+            title: 'Interior',
+            description: 'Total interior construction and finishing',
+            images: ['./images/d-3.jpg', './images/c-3.jpg', './images/i-1.jpg']
         }
     };
 
@@ -102,13 +97,13 @@ let currentSlide = 0;
 
 const testimonials = [
     {
-        image: "https://via.placeholder.com/150",
+        image: "./images/f.png",
         text: "The construction team was professional, reliable, and efficient. They transformed our backyard into a beautiful outdoor living space with a custom-built pool and deck. Highly recommend their services!",
         name: "Fady Gazel",
         role: "Homeowner"
     },
     {
-        image: "https://via.placeholder.com/150",
+        image: "./images/me.jpeg",
         text: "We hired them for a complete home renovation, and they exceeded our expectations. The project was completed on time and within budget, with top-notch craftsmanship. Every detail was perfect!",
         name: "Saugat Karki",
         role: "Interior Designer"
@@ -147,5 +142,14 @@ function nextSlide() {
 // Initialize the first slide
 updateSlide();
 
+// for menu 
+
+const navLinks = document.querySelector(".nav-links");
+const navLinksLi = document.querySelector(".lil");
+const navBtn = document.querySelector(".ham-menu");
+navBtn.addEventListener("click", ()=> {
+        navLinks.classList.toggle("menu-active");
+        navLinksLi.classList.toggle("menu-activeli");
+    });
 
 

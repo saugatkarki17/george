@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gt realty</title>
+    <title>Gt Realty</title>
+    <link rel="icon" type="image/x-icon" href="/images/GTRealty.png">
     <script src="https://kit.fontawesome.com/276489fb38.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+
+    
 
 <script>
     
@@ -36,8 +39,18 @@
                 <li><a href="#scroll-project" >Projects</a></li>
                 <li><a href="">Reviews</a></li>
                 <li><a href="">About Us</a></li>
+                <a href="" class="btn-nav-1">Contact</a>
+
             </ul>
+            <div class="ham-menu">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+
             <a href="" class="btn-nav">Contact</a>
+
+            
         </nav>
 
         <!-- bottom div after nav -->
@@ -149,15 +162,15 @@
 
 <!-- projects -->
 
-        <div class="benefit-service" >
+        <div class="benefit-service" id="pro" >
             <h1 class="service-h1" style="font-size: 30px;">Our Recent Projects</h1>
         </div>
 
         <div class="gallery-container" id="scroll-project">
             <div class="toggle-buttons">
                 <button class=" active" onclick="showCategory('all')">All</button>
-                <button onclick="showCategory('residential')">Residential</button>
-                <button onclick="showCategory('commercial')">Commercial</button>
+                <button onclick="showCategory('residential')">Exterior</button>
+                <button onclick="showCategory('commercial')">Interior</button>
             </div>
             <div class="projects all residential">
                 <div class="project" onclick="showModal('project1')">
@@ -166,25 +179,25 @@
 
                 </div>
                 <div class="project" onclick="showModal('project2')">
-                    <img src="./images/background-main.jpg" alt="Project 2" style="padding-bottom: 6px;">
-                    <h2 class="h2-project">Residential Project 2</h2>
+                    <img src="./images/IMG_2691.jpeg" alt="Project 2" style="padding-bottom: 6px;">
+                    <h2 class="h2-project">Clifton, NJ</h2>
 
                 </div>
             </div>
             <div class="projects all commercial">
                 <div class="project" onclick="showModal('project3')">
-                    <img src="./images/background-main.jpg" alt="Project 3" style="padding-bottom: 6px;">
-                    <h2 class="h2-project">Commercial Project 1</h2>
+                    <img src="./images/b-3.jpeg" alt="Project 3" style="padding-bottom: 6px;">
+                    <h2 class="h2-project">Woodland Park, NJ</h2>
 
                 </div>
                 <div class="project" onclick="showModal('project4')">
-                    <img src="./images/background-main.jpg" alt="Project 4" style="padding-bottom: 6px;">
-                    <h2 class="h2-project">Commercial Project 2</h2>
+                    <img src="./images/d-2.jpeg" alt="Project 4" style="padding-bottom: 6px;">
+                    <h2 class="h2-project">Bloomfield, NJ</h2>
 
                 </div>
-                <div class="project" onclick="showModal('project4')">
-                    <img src="./images/background-main.jpg" alt="Project 4" style="padding-bottom: 6px;">
-                    <h2 class="h2-project">Commercial Project 2</h2>
+                <div class="project" onclick="showModal('project5')">
+                    <img src="./images/c-3.jpg" alt="Project 5" style="padding-bottom: 6px;">
+                    <h2 class="h2-project">Interior</h2>
 
                 </div>
             </div>
@@ -227,14 +240,93 @@
 
 
          <!-- message -->
-        <div class="message-div">
-            <h1 class="h1-message">Get In Touch</h1>
+         <div class="main-contact-main">
+            <div class="main-contact">
+                
+                <div class="contact-l" >
+                    <p class="con-p">Contact Us</p>
+                    <h1>Feel Free To Contact For Any Kind Of Query.
+                    </h1>
+                    <p>Thank you for your interest in GT Realty. We consider communication with the customer.</p>
+    
+                    <div class="main-contact-info">
+                        <div class = "main-contact-info-1">
+                            <div class="main-contact-info-1-1"><i class="fas fa-mobile-alt"></i></div>
+    
+                            <div class="main-contact-info-1-2">
+                                <h3>Phone Number</h3>
+                                <p>+(201) 675-5890</p>
+                            </div>
+    
+                        </div>
+                        <div class = "main-contact-info-1">
+                            <div class="main-contact-info-1-1"><i class="fas fa-envelope"></i>
+                            </div>
+    
+                            <div class="main-contact-info-1-2">
+                                <h3>Mail Address</h3>
+                                <p>George.amir@me.com</p>
+                            </div>
+    
+                        </div>
+                        <div class = "main-contact-info-1">
+                            <div class="main-contact-info-1-1"><i class="fas fa-map-marker-alt"></i>
+
+                            </div>
+    
+                            <div class="main-contact-info-1-2">
+                                <h3>Office Location</h3>
+                                <p>281 Browertown rd, Woodland park,NJ,07424</p>
+                            </div>
+    
+                        </div>
+                        <div class = "main-contact-info-1">
+                            <div class="main-contact-info-1-1"><i class="fas fa-clock"></i>
+                            </div>
+    
+                            <div class="main-contact-info-1-2">
+                                <h3>Active Hours</h3>
+                                <p>8AM TO 4PM</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <!-- message -->
+                <div class ="contact-r" >
+
+                    <form
+                        action="https://formspree.io/f/mgvennlp"
+                        method="POST"
+                        >
+
+                        <label>
+                            Full Name: <br>
+                            <input type="text" name="Name">
+
+                        </label>
+                        <label>
+                            Phone Number: <br>
+                            <input type="number" name="number">
+
+
+                        </label>
+                        <label>
+                            Email:<br>
+                            <input type="email" name="email">
+                        </label>
+                        <label>
+                            Message: <br>
+                            <textarea name="message"></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button type="submit">Send</button>
+                        </form>
+                </div>
+            </div>
             
-              
-              </style>
-
-
-    </div>
+            
+            </div>
 
 
     <!-- footer -->
@@ -249,10 +341,10 @@
         
         <div class="row">
         <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="lil"><a href="#">Home</a></li>
+        <li class="lil"><a href="#">About us</a></li>
+        <li class="lil"><a href="#">Projects</a></li>
+        <li class="lil"><a href="#">Contact</a></li>
         </ul>
         </div>
         
